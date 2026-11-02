@@ -25,6 +25,9 @@
           <router-link to="/restocking" :class="{ active: $route.path === '/restocking' }">
             {{ t('nav.restocking') }}
           </router-link>
+          <router-link to="/backlog" :class="{ active: $route.path === '/backlog' }">
+            {{ t('nav.backlog') }}
+          </router-link>
           <router-link to="/reports" :class="{ active: $route.path === '/reports' }">
             Reports
           </router-link>
@@ -247,6 +250,8 @@ body {
   border-radius: 6px;
   transition: all 0.2s ease;
   position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-tabs a:hover {
