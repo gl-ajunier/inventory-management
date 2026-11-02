@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -103,6 +104,12 @@ export default {
 
   // Orders
   orders: {
+    submittedOrders: '発注済み注文',
+    noSubmittedOrders: '補充発注はまだありません',
+    submittedDate: '発注日',
+    total: '合計',
+    leadTime: 'リードタイム',
+    submittedStatus: '発注済み',
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
@@ -309,6 +316,36 @@ export default {
     english: 'English',
     japanese: '日本語',
     selectLanguage: '言語を選択'
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '需要予測と予算に基づいて補充発注を提案します',
+    budget: '予算',
+    orderTotal: '発注合計',
+    remaining: '残額',
+    items: '品目',
+    recommendedItems: '推奨品目',
+    empty: '予算が少なく、補充できる品目がありません。予算を増やしてください。',
+    partial: '一部',
+    partialHint: '一部のみ発注(推奨数量: {count})',
+    placeOrder: '発注する',
+    placing: '発注中...',
+    loadError: '需要予測の読み込みに失敗しました',
+    submitError: '発注に失敗しました。もう一度お試しください。',
+    successMessage: '発注 {orderNumber} を送信しました。リードタイム: {days}日',
+    viewOrders: '注文を確認',
+    days: '{count}日',
+    table: {
+      sku: 'SKU',
+      itemName: '品名',
+      trend: 'トレンド',
+      quantity: '数量',
+      unitCost: '単価',
+      lineTotal: '小計',
+      leadTime: 'リードタイム'
+    }
   },
 
   // Common
